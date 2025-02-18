@@ -36,4 +36,4 @@ jobs:
       run: |
         pytest
   security_test:
-   uses: harshja-ctrl/LinkedInLearning-CD/.github/workflows/sast.yml@main
+   uses: ./.github/workflows/sast_scan.yml
