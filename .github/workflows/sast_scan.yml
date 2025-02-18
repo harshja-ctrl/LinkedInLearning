@@ -1,0 +1,13 @@
+name: sast_scan
+on:
+ workflow_call
+jobs:
+  sast_scan:
+   runs-on: ubuntu-latest
+   steps:
+     - name: checkout the code
+       uses: actions/checkout@v3
+     - name: initialize code ql
+       uses: github/codeql-action/init@v3
+       with: 
+         language: python
